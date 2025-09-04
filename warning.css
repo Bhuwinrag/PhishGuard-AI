@@ -1,0 +1,67 @@
+#phishguard-warning-banner {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 380px;
+    z-index: 99999999;
+    background: linear-gradient(145deg, #4d0000, #330000);
+    color: white;
+    border: 1px solid #ff4d4d;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(110%); }
+    to { transform: translateX(0); }
+}
+
+.phishguard-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.phishguard-icon {
+    font-size: 32px;
+    margin-right: 16px;
+    animation: pulseIcon 1.5s infinite;
+}
+
+@keyframes pulseIcon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.phishguard-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.phishguard-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.phishguard-message {
+    font-size: 14px;
+    color: #ffc2c2;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+.phishguard-timer {
+    height: 4px;
+    background-color: #ff4d4d;
+    animation: countdown 10s linear forwards;
+}
+
+@keyframes countdown {
+    from { width: 100%; }
+    to { width: 0%; }
+}
