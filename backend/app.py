@@ -16,11 +16,7 @@ app = Flask(__name__)
 CORS(app)
 simulator = AerSimulator()
 
-# ---
-# FIX: A new, more explicit import approach for Google AI
-# ---
-# We will import the main library and then access its methods.
-# This is the standard way, but we will add error suppression.
+
 import google.generativeai as genai # type: ignore
 
 # --- Securely configure the Gemini API key ---
@@ -28,7 +24,6 @@ api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY not found. Make sure it is set in your .env file.")
 
-# Tell the linter to ignore this specific line, as it is a known false positive.
 genai.configure(api_key=api_key) # type: ignore
 
 
