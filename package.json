@@ -15,4 +15,3 @@
     "@babel/core": "^7.23.9",
     "@babel/preset-react": "^7.23.3"
   }
-}
