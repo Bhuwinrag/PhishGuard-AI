@@ -289,4 +289,3 @@ const App = () => {
   }, result.quantumVerified ? 'VERIFIED' : 'N/A'))));
 };
 ReactDOM.render(/*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
-}
