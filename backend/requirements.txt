@@ -4,3 +4,4 @@ qiskit
 qiskit-aer
 google-generativeai
 python-dotenv
+#
