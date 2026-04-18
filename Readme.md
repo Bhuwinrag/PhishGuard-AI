@@ -1,11 +1,11 @@
-# PhishGuardAI 🛡️
+# PhishGuardAI 
 
 PhishGuardAI is a powerful Chrome extension that provides real-time protection against phishing and social engineering attacks. It leverages a sophisticated two-layer detection system: a first layer using Google's Gemini LLM for intelligent content analysis, and a second verification layer using a quantum algorithm simulated with Qiskit.
 
 
 
 ---
-## ✨ Features
+##  Features
 
 * **Two-Layer Detection:** Combines state-of-the-art AI analysis with a quantum-based verification layer for robust threat detection.
 * **Comprehensive Scanning:** Analyzes page URL, text content, links, and form elements (like password fields) to get a complete picture of potential threats.
@@ -16,7 +16,7 @@ PhishGuardAI is a powerful Chrome extension that provides real-time protection a
 ---
 
 ---
-## 🚀 Setup and Installation
+##  Setup and Installation
 
 To get PhishGuardAI running on your local machine, follow these steps.
 
